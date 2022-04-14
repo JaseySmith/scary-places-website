@@ -1,0 +1,576 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #161A1D;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  color: #CCCCCC;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Neucha', cursive;
+  letter-spacing: 2px;
+}
+
+li, a, button {
+  text-decoration: none;
+  list-style: none;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-weight: lighter;
+  color: #CCCCCC;
+}
+
+::-moz-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-weight: lighter;
+  color: #CCCCCC;
+}
+
+::-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-weight: lighter;
+  color: #CCCCCC;
+}
+
+#blog-page {
+  background-color: #161A1D;
+  padding: 10em 10% 4em;
+}
+
+@media (max-width: 85.375em) {
+  #blog-page {
+    padding: 10em 5% 4em;
+  }
+}
+
+@media (min-width: 120em) {
+  #blog-page {
+    padding: 10em 18% 4em;
+  }
+}
+
+@media (min-width: 160em) {
+  #blog-page {
+    padding: 10em 24% 4em;
+  }
+}
+
+#blog-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 64em) {
+  #blog-page .container {
+    display: block;
+  }
+}
+
+.sidebar {
+  width: 33%;
+}
+
+@media (max-width: 64em) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.search-posts {
+  padding-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 64em) {
+  .search-posts {
+    padding: 0 0 50px;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 25px;
+}
+
+.flex-search {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 48em) {
+  .flex-search {
+    width: 100%;
+  }
+}
+
+.search-posts input {
+  width: 275px;
+  color: #CCCCCC;
+  margin: 0;
+  padding: 1em;
+  float: left;
+  border: none;
+  outline: none;
+  background-color: #0E1011;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+@media (max-width: 48em) {
+  .search-posts input {
+    width: 100%;
+  }
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 1.5em;
+  width: auto;
+  height: 48px;
+  padding: 0 0.75em;
+  margin: 0;
+  text-decoration: none;
+  color: #CCCCCC;
+  border: none;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  color: #D62828;
+}
+
+.filter-by {
+  margin-top: 60px;
+}
+
+@media (max-width: 64em) {
+  .filter-by {
+    display: none;
+  }
+}
+
+.filter-by a {
+  color: #CCCCCC;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+.filter-by a:hover {
+  color: #D62828;
+}
+
+.filter-by li {
+  margin: 20px 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.content {
+  width: 66%;
+}
+
+@media (max-width: 64em) {
+  .content {
+    width: 100%;
+  }
+}
+
+.content h1 {
+  margin: 0 0 0.25em;
+}
+
+.blog-hr {
+  margin-top: 3em;
+  border: 1px solid #CCCCCC;
+}
+
+.split-column {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (max-width: 48em) {
+  .split-column {
+    display: block;
+  }
+}
+
+.blog-post {
+  position: relative;
+  width: 49%;
+  margin: 20px 0.5% 50px;
+}
+
+@media (max-width: 48em) {
+  .blog-post {
+    width: 100%;
+  }
+}
+
+.blog-post img {
+  height: 250px;
+  width: 100%;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.75;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.blog-link {
+  text-decoration: none;
+  color: red;
+  padding: 2px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  margin-top: 10px;
+}
+
+.blog-link:hover {
+  border-bottom: 1px solid #D62828;
+}
+
+.blog-link i {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.title {
+  display: block;
+  font-size: 2.5em;
+  color: #CCCCCC;
+  padding: 0;
+  margin: 10px 0;
+}
+
+@media (max-width: 64em) {
+  .title {
+    font-size: 2em;
+  }
+}
+
+.queen-mary {
+  background-image: url(../img/the-queen-mary.jpg);
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  padding: 0 20%;
+}
+
+@media (max-width: 48em) {
+  .queen-mary {
+    padding: 0 5% !important;
+  }
+}
+
+@media (max-width: 64em) {
+  .queen-mary {
+    padding: 0 15%;
+  }
+}
+
+@media (max-width: 85.375em) {
+  .queen-mary {
+    padding: 0 18%;
+  }
+}
+
+@media (min-width: 120em) {
+  .queen-mary {
+    padding: 0 26%;
+  }
+}
+
+@media (min-width: 160em) {
+  .queen-mary {
+    padding: 0 30%;
+  }
+}
+
+.catacombs-of-paris {
+  background-image: url(../img/the-catacombs.jpg);
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  padding: 0 20%;
+}
+
+@media (max-width: 48em) {
+  .catacombs-of-paris {
+    padding: 0 5% !important;
+  }
+}
+
+@media (max-width: 64em) {
+  .catacombs-of-paris {
+    padding: 0 15%;
+  }
+}
+
+@media (max-width: 85.375em) {
+  .catacombs-of-paris {
+    padding: 0 18%;
+  }
+}
+
+@media (min-width: 120em) {
+  .catacombs-of-paris {
+    padding: 0 26%;
+  }
+}
+
+@media (min-width: 160em) {
+  .catacombs-of-paris {
+    padding: 0 30%;
+  }
+}
+
+.chernobyl {
+  background-image: url(../img/chernobyl.jpg);
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  padding: 0 20%;
+}
+
+@media (max-width: 48em) {
+  .chernobyl {
+    padding: 0 5% !important;
+  }
+}
+
+@media (max-width: 64em) {
+  .chernobyl {
+    padding: 0 15%;
+  }
+}
+
+@media (max-width: 85.375em) {
+  .chernobyl {
+    padding: 0 18%;
+  }
+}
+
+@media (min-width: 120em) {
+  .chernobyl {
+    padding: 0 26%;
+  }
+}
+
+@media (min-width: 160em) {
+  .chernobyl {
+    padding: 0 30%;
+  }
+}
+
+.suicide-forest {
+  background-image: url(../img/suicide-forest.jpg);
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  padding: 0 20%;
+}
+
+@media (max-width: 48em) {
+  .suicide-forest {
+    padding: 0 5% !important;
+  }
+}
+
+@media (max-width: 64em) {
+  .suicide-forest {
+    padding: 0 15%;
+  }
+}
+
+@media (max-width: 85.375em) {
+  .suicide-forest {
+    padding: 0 18%;
+  }
+}
+
+@media (min-width: 120em) {
+  .suicide-forest {
+    padding: 0 26%;
+  }
+}
+
+@media (min-width: 160em) {
+  .suicide-forest {
+    padding: 0 30%;
+  }
+}
+
+.alcatraz {
+  background-image: url(../img/alcatraz.jpg);
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  padding: 0 20%;
+}
+
+@media (max-width: 48em) {
+  .alcatraz {
+    padding: 0 5% !important;
+  }
+}
+
+@media (max-width: 64em) {
+  .alcatraz {
+    padding: 0 15%;
+  }
+}
+
+@media (max-width: 85.375em) {
+  .alcatraz {
+    padding: 0 18%;
+  }
+}
+
+@media (min-width: 120em) {
+  .alcatraz {
+    padding: 0 26%;
+  }
+}
+
+@media (min-width: 160em) {
+  .alcatraz {
+    padding: 0 30%;
+  }
+}
+
+.background-img .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.blog-title {
+  font-size: 3em;
+  margin: 0;
+}
+
+#blog-content {
+  padding: 4em 20%;
+}
+
+@media (max-width: 48em) {
+  #blog-content {
+    padding: 4em 5% !important;
+  }
+}
+
+@media (max-width: 64em) {
+  #blog-content {
+    padding: 4em 15%;
+  }
+}
+
+@media (max-width: 85.375em) {
+  #blog-content {
+    padding: 4em 18%;
+  }
+}
+
+@media (min-width: 120em) {
+  #blog-content {
+    padding: 4em 26%;
+  }
+}
+
+@media (min-width: 160em) {
+  #blog-content {
+    padding: 4em 30%;
+  }
+}
+
+#blog-content .text {
+  line-height: 2;
+}
+
+.blog-img {
+  width: 100%;
+  max-height: 550px;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=blog.css.map */

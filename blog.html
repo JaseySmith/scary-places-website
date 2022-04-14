@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Scary Places | Blog</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <a href="index.html"><img id="logo" src="img/scary-places-logo.png" alt="Scary Places"></a>
+        <div class="nav">
+          <a href="index.html" class="nav-link hover-effect text">Home</a>
+          <a href="blog.html" class="nav-link hover-effect text">Blog</a>
+          <a href="contact.php" class="nav-link hover-effect text">Contact</a>
+          <a href="scary.html" class="nav-link hover-effect text">Near Me</a>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </div>
+    <section id="blog-page">
+      <div class="container">
+        <div class="sidebar">
+          <div class="sticky">
+            <div class="search-posts">
+              <label class="text bold margin-bottom">Search</label>
+              <div class="flex-search">
+                <input type="search" class="text" id="search-posts" name="search-posts" placeholder="Asylum, Forest, Mansion...">
+                <button name="button" class="search-button"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+            <div class="filter-by">
+              <p class="text bold">Filter by</p>
+              <ul class="no-padding">
+                <li><a class="text" href="">Haunted Houses</a></li>
+                <li><a class="text" href="">Insane Asylums</a></li>
+                <li><a class="text" href="">Catacombs</a></li>
+                <li><a class="text" href="">Tunnels/Caves</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h1>Blog Posts</h1>
+          <p class="text">Learn more about your favorite scary places.</p>
+          <hr class="blog-hr">
+          <div class="split-column">
+            <div class="blog-post">
+              <a href="blog/queen-mary.html"><img src="img/the-queen-mary.jpg"></a>
+              <a href="blog/queen-mary.html" class="title">The Queen Mary</a>
+              <a href="blog/queen-mary.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="blog-post">
+              <a href="blog/catacombs-of-paris.html"><img src="img/the-catacombs.jpg"></a>
+              <a href="blog/catacombs-of-paris.html" class="title">Catacombs of Paris</a>
+              <a href="blog/catacombs-of-paris.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="blog-post">
+              <a href="blog/chernobyl.html"><img src="img/chernobyl.jpg"></a>
+              <a href="blog/chernobyl.html" class="title">Chernobyl</a>
+              <a href="blog/chernobyl.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="blog-post">
+              <a href="blog/suicide-forest.html"><img src="img/suicide-forest.jpg"></a>
+              <a href="blog/suicide-forest.html" class="title">Suicide Forest</a>
+              <a href="blog/suicide-forest.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="blog-post">
+              <a href="blog/alcatraz.html"><img src="img/alcatraz.jpg"></a>
+              <a href="blog/alcatraz.html" class="title">Alcatraz</a>
+              <a href="blog/alcatraz.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="flex-column">
+          <p class="text bold">Quick links</p>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="text">FAQs</a></li>
+            <li><a href="blog.html" class="text">Blog</a></li>
+            <li><a href="contact.php" class="text">Contact</a></li>
+            <li><a href="index.html" class="text">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="flex-form">
+          <p class="text bold">Newsletter</p>
+          <div class="flex-row">
+            <input class="email-input" type="email" name="email" placeholder="Enter email">
+            <div class="submit-button">Subscribe</div>
+          </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="back-to-top">
+          <a href="#blog-page" class="text">Back to top<i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="social-links">
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/scaryplaces_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p class="text">© 2022 <a href="index.html">Scary Places.</a> All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #CCCCCC;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Neucha', cursive;
+  letter-spacing: 2px;
+}
+
+li, a, button {
+  text-decoration: none;
+}
+
+.scary-search::-webkit-input-placeholder {
+  color: #CCCCCC;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+.scary-search::-moz-placeholder {
+  color: #CCCCCC;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+.scary-search::-ms-input-placeholder {
+  color: #CCCCCC;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+#scary-page {
+  background-image: url(../img/scary-building.jpg);
+  background-color: rgba(0, 0, 0, 0.66);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 1.5em 0;
+}
+
+.scary-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  padding: 0 30%;
+}
+
+@media (max-width: 48em) {
+  .scary-container {
+    padding: 0 5% 5em !important;
+  }
+}
+
+@media (max-width: 64em) {
+  .scary-container {
+    padding: 0 15% 5em;
+  }
+}
+
+@media (max-width: 85.375em) {
+  .scary-container {
+    padding: 0 24% 5em;
+  }
+}
+
+@media (min-width: 160em) {
+  .scary-container {
+    padding: 0 35% 5em;
+  }
+}
+
+.search-text {
+  font-size: 1.1em;
+  margin-bottom: 2.25em;
+}
+
+.flex-search {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 25em) {
+  .flex-search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.scary-search {
+  font-size: 1.1em;
+  padding: 1em;
+  margin: 0;
+  width: 100%;
+  background-color: transparent;
+  color: #CCCCCC;
+  border: none;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 1.5em;
+  width: auto;
+  height: 48px;
+  padding: 0 0.75em;
+  margin: 0;
+  text-decoration: none;
+  color: #CCCCCC;
+  border: none;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  color: #D62828;
+}
+/*# sourceMappingURL=scary.css.map */
