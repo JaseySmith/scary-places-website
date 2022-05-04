@@ -11,7 +11,8 @@ $nameAlert = '';
 $emailAlert = '';
 $error = '';
 
-include '../secure/login.php';
+// Change below comment when uploading
+// include '../secure/login.php';
 
 
 
