@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -31,25 +30,13 @@ li, a, button {
   list-style: none;
 }
 
-::-webkit-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-weight: lighter;
-  color: #CCCCCC;
-}
-
-::-moz-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-weight: lighter;
-  color: #CCCCCC;
-}
-
+::-webkit-input-placeholder,
+::-moz-placeholder,
 ::-ms-input-placeholder {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-weight: lighter;
-  color: #CCCCCC;
+  color: #161a1d;
 }
 
 #blog-page {
@@ -76,8 +63,6 @@ li, a, button {
 }
 
 #blog-page .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -104,19 +89,10 @@ li, a, button {
 
 .search-posts {
   padding-top: 68px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 @media (max-width: 64em) {
@@ -131,16 +107,9 @@ li, a, button {
 
 .flex-search {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 @media (max-width: 48em) {
@@ -153,12 +122,11 @@ li, a, button {
   width: 275px;
   color: #CCCCCC;
   margin: 0;
-  padding: 1em;
+  padding: 0.8em;
   float: left;
   border: none;
   outline: none;
   background-color: #0E1011;
-  border: 1px solid #CCCCCC;
   border-radius: 5px;
 }
 
@@ -171,8 +139,8 @@ li, a, button {
 .search-button {
   position: absolute;
   right: 0;
-  top: 5px;
-  font-size: 1.5em;
+  top: 0;
+  font-size: 1.3em;
   width: auto;
   height: 48px;
   padding: 0 0.75em;
@@ -183,6 +151,7 @@ li, a, button {
   background-color: transparent;
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
+  transition-duration: 0.05s;
 }
 
 .search-button:hover {
@@ -201,8 +170,8 @@ li, a, button {
 
 .filter-by a {
   color: #CCCCCC;
+  transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
 }
 
 .filter-by a:hover {
@@ -238,11 +207,8 @@ li, a, button {
 
 .split-column {
   margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -268,8 +234,7 @@ li, a, button {
   height: 250px;
   width: 100%;
   margin: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0.75;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -279,8 +244,8 @@ li, a, button {
   text-decoration: none;
   color: red;
   padding: 2px;
+  transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
   margin-top: 10px;
 }
 
@@ -508,19 +473,10 @@ li, a, button {
 }
 
 .background-img .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   height: 100%;
   width: 100%;
 }
@@ -573,4 +529,3 @@ li, a, button {
   max-height: 550px;
   margin-bottom: 20px;
 }
-/*# sourceMappingURL=blog.css.map */

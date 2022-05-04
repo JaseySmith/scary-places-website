@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -31,15 +30,9 @@ li, a, button {
 }
 
 #contact-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #161A1D;
   padding: 10em 20% 4em;
   width: 100%;
@@ -100,15 +93,14 @@ li, a, button {
 .form input[type="text"],
 .form textarea {
   background-color: #0E1011;
-  padding: 1em;
+  padding: 0.8em;
   border: none;
   border-radius: 5px;
   margin: 0 0 4px;
   outline: none;
   font-size: 1.1em;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -137,22 +129,12 @@ textarea {
   max-height: 31.25em;
 }
 
-::-webkit-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
-  color: #CCCCCC;
-}
-
-::-moz-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
-  color: #CCCCCC;
-}
-
+::-webkit-input-placeholder,
+::-moz-placeholder,
 ::-ms-input-placeholder {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
-  color: #CCCCCC;
+  color: #161a1d;
 }
 
 .submit-form-button {
@@ -165,9 +147,9 @@ textarea {
   border-radius: 5px;
   color: #161A1D;
   background-color: #CCCCCC;
-  padding: 1em 1.5em;
+  padding: 0.8em 1.5em;
   -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  transition-duration: 0.25s;
   margin: 0;
   cursor: pointer;
 }
@@ -186,33 +168,17 @@ textarea {
 .showcase {
   height: 100vh;
   padding: 0 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #161A1D;
 }
 
 .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   max-width: 425px;
   padding: 24px;
@@ -240,8 +206,8 @@ textarea {
   text-decoration: none;
   color: #D62828;
   border-bottom: 1px solid transparent;
+  transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
 }
 
 .submission-link:hover {
@@ -268,4 +234,3 @@ textarea {
   color: #D62828;
   text-align: center;
 }
-/*# sourceMappingURL=form.css.map */
