@@ -8,6 +8,7 @@
     <title>Scary Places | Contact us</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="img/sp-favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
   </head>
