@@ -425,6 +425,7 @@ h3 {
 #about .text {
   margin: 1em 0;
   text-align: center;
+  line-height: 1.5;
 }
 
 /* Blog */

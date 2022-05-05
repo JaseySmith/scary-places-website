@@ -262,7 +262,7 @@ select:focus + .focus {
 #results .container {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 32% 32% 32%;
+  grid-template-columns: 31.9% 31.9% 31.9%;
   grid-gap: 25px;
   flex-wrap: wrap;
 }
