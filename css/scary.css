@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -9,7 +8,7 @@ html {
 
 body {
   background-color: #0E1011;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 1em;
@@ -21,8 +20,7 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Neucha', cursive;
-  letter-spacing: 2px;
+  font-family: 'Roboto Flex', sans-serif;
 }
 
 li, a, button {
@@ -32,7 +30,7 @@ li, a, button {
 ::-webkit-input-placeholder,
 ::-moz-placeholder,
 ::-ms-input-placeholder {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
   font-weight: 300;
   color: #161a1d;
 }
@@ -193,7 +191,7 @@ select {
   padding: 0 1em 0 0;
   margin: 0;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
   font-weight: 300;
   font-size: 1.1em;
   color: #ccc;
@@ -219,7 +217,7 @@ select:focus + .focus {
 
 .update-results {
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
   font-weight: 300;
   font-size: 1.1em;
   padding: 0.8em;
