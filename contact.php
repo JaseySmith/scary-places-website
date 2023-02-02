@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scary Places | Contact us</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="css/form.css">
   </head>
   <body>
-    <div id="header">
+  <div id="header">
       <div class="container">
-        <a href="index.html"><img id="logo" src="img/scary-places-logo.png" alt="Scary Places"></a>
+        <a href="index.html" id="logo">Scary <span>Places</span></a>
         <div class="nav">
           <a href="index.html" class="nav-link hover-effect text">Home</a>
           <a href="blog.html" class="nav-link hover-effect text">Blog</a>

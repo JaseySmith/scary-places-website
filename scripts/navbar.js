@@ -7,17 +7,15 @@ var body = document.querySelector('body');
 // Shrink navbar on scroll
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.querySelector('.nav').style.top = "81px";
     document.getElementById("header").style.paddingTop = "15px";
     document.getElementById("header").style.paddingBottom = "15px";
     document.getElementById("header").classList.add("dark-bkg");
-    document.getElementById("logo").style.height = "46px";
+    document.getElementById("logo").style.fontSize = "2.5em";
   } else {
-    document.querySelector('.nav').style.top = "0";
     document.getElementById("header").style.paddingTop = "20px";
     document.getElementById("header").style.paddingBottom = "20px";
     document.getElementById("header").classList.remove("dark-bkg");
-    document.getElementById("logo").style.height = "56px";
+    document.getElementById("logo").style.fontSize = "2.75em";
   }
 }
 
@@ -43,7 +41,7 @@ function animateLinks() {
     if (link.style.animation) {
         link.style.animation = '';
     } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.1}s`
     }
   });
 }

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scary Places | Blog</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fbe66ddc41.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="img/sp-favicon.png">
     <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,7 @@
   <body>
     <div id="header">
       <div class="container">
-        <a href="index.html"><img id="logo" src="img/scary-places-logo.png" alt="Scary Places"></a>
+        <a href="index.html" id="logo">Scary <span>Places</span></a>
         <div class="nav">
           <a href="index.html" class="nav-link hover-effect text">Home</a>
           <a href="blog.html" class="nav-link hover-effect text">Blog</a>
@@ -27,57 +27,86 @@
         </div>
       </div>
     </div>
+    <section id="welcome">
+      <h1>Welcome to Our Blog.</h1>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti recusandae quae deleniti officiis corporis velit impedit neque!</p>
+    </section>
     <section id="blog-page">
       <div class="container">
-        <div class="sidebar">
-          <div class="sticky">
-            <div class="search-posts">
-              <label class="text bold margin-bottom">Search</label>
-              <div class="flex-search">
-                <input type="search" class="text" id="search-posts" name="search-posts" placeholder="Asylum, Forest, Mansion...">
-                <button name="button" class="search-button"><i class="fa fa-search"></i></button>
-              </div>
+        <div class="filter-by padding">
+          <div class="input">
+            <div class="icon-wrap">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" class="search" id="search-posts" name="search-posts" placeholder="Search...">
             </div>
-            <div class="filter-by">
-              <p class="text bold">Filter by</p>
-              <ul class="no-padding">
-                <li><a class="text" href="">Haunted Houses</a></li>
-                <li><a class="text" href="">Insane Asylums</a></li>
-                <li><a class="text" href="">Catacombs</a></li>
-                <li><a class="text" href="">Tunnels/Caves</a></li>
-              </ul>
+          </div>
+          <div class="input">
+            <div class="style-select">
+              <select name="sortby" id="sortby">
+                <option value="Categories...">Categories...</option>
+                <option value="Abandoned">Abandoned</option>
+                <option value="Castles">Castles</option>
+                <option value="Catacombs">Catacombs</option>
+                <option value="Forests">Forests</option>
+                <option value="Haunted">Haunted</option>
+                <option value="Asylums">Insane Asylums</option>
+                <option value="Prisons">Prisons</option>
+              </select>
+              <span class="focus"></span>
+            </div>
+          </div>
+          <div class="input">
+            <div class="style-select">
+              <select name="sortby" id="sortby">
+                <option value="Categories...">Archives...</option>
+                <option value="Abandoned">December 2022</option>
+                <option value="Castles">November 2022</option>
+                <option value="Catacombs">October 2022</option>
+                <option value="Forests">September 2022</option>
+                <option value="Haunted">August 2022</option>
+                <option value="Asylums">July 2022</option>
+                <option value="Prisons">June 2022</option>
+              </select>
+              <span class="focus"></span>
             </div>
           </div>
         </div>
-        <div class="content">
-          <h1>Blog Posts</h1>
-          <p class="text">Learn more about your favorite scary places.</p>
-          <hr class="blog-hr">
-          <div class="split-column">
-            <div class="blog-post">
-              <a href="blog/queen-mary.html"><img src="img/the-queen-mary.jpg"></a>
-              <a href="blog/queen-mary.html" class="title">The Queen Mary</a>
-              <a href="blog/queen-mary.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+        <div class="content padding">
+          <div id="blog-posts">
+            <div class="post">
+              <a href="blog/queen-mary.html"><img src="img/the-queen-mary.webp"></a>
+              <div class="overlay">
+                <p href="blog/queen-mary.html" class="title">The Queen Mary</p>
+                <a href="blog/queen-mary.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+              </div>
             </div>
-            <div class="blog-post">
-              <a href="blog/catacombs-of-paris.html"><img src="img/the-catacombs.jpg"></a>
-              <a href="blog/catacombs-of-paris.html" class="title">Catacombs of Paris</a>
-              <a href="blog/catacombs-of-paris.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+            <div class="post">
+              <a href="blog/catacombs-of-paris.html"><img src="img/the-catacombs.webp"></a>
+              <div class="overlay">
+                <p href="blog/catacombs-of-paris.html" class="title">Catacombs of Paris</p>
+                <a href="blog/catacombs-of-paris.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+              </div>
             </div>
-            <div class="blog-post">
-              <a href="blog/chernobyl.html"><img src="img/chernobyl.jpg"></a>
-              <a href="blog/chernobyl.html" class="title">Chernobyl</a>
-              <a href="blog/chernobyl.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+            <div class="post">
+              <a href="blog/chernobyl.html"><img src="img/chernobyl.webp"></a>
+              <div class="overlay">
+                <p href="blog/chernobyl.html" class="title">Chernobyl</p>
+                <a href="blog/chernobyl.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+              </div>
             </div>
-            <div class="blog-post">
-              <a href="blog/suicide-forest.html"><img src="img/suicide-forest.jpg"></a>
-              <a href="blog/suicide-forest.html" class="title">Suicide Forest</a>
-              <a href="blog/suicide-forest.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+            <div class="post">
+              <a href="blog/suicide-forest.html"><img src="img/suicide-forest.webp"></a>
+              <div class="overlay">
+                <p href="blog/suicide-forest.html" class="title">Suicide Forest</p>
+                <a href="blog/suicide-forest.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+              </div>
             </div>
-            <div class="blog-post">
-              <a href="blog/alcatraz.html"><img src="img/alcatraz.jpg"></a>
-              <a href="blog/alcatraz.html" class="title">Alcatraz</a>
-              <a href="blog/alcatraz.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+            <div class="post">
+              <a href="blog/alcatraz.html"><img src="img/alcatraz.webp"></a>
+              <div class="overlay">
+                <p href="blog/alcatraz.html" class="title">Alcatraz</p>
+                <a href="blog/alcatraz.html" class="blog-link text">Read more<i class="fas fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>

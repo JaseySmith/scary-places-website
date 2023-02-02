@@ -1,39 +1,10 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #161A1D;
-  font-family: 'Roboto Flex', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 1em;
-  line-height: 1.25;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #CCCCCC;
-  padding: 0;
-  margin: 0;
-}
-
-h1, h2 {
-  font-family: 'Roboto Flex', sans-serif;
-}
-
-li, a, button {
-  text-decoration: none;
-}
-
+/* --- Contact Page --- */
 #contact-page {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #161A1D;
-  padding: 10em 20% 4em;
+  text-align: center;
+  background-color: #0E1116;
+  padding: 10em 25% 4em;
   width: 100%;
   min-height: 100vh;
 }
@@ -44,25 +15,13 @@ li, a, button {
   }
 }
 
-@media (max-width: 64em) {
-  #contact-page {
-    padding: 10em 15% 4em;
-  }
-}
-
 @media (max-width: 85.375em) {
   #contact-page {
-    padding: 10em 18% 4em;
+    padding: 10em 20% 4em;
   }
 }
 
 @media (min-width: 120em) {
-  #contact-page {
-    padding: 10em 26% 4em;
-  }
-}
-
-@media (min-width: 160em) {
   #contact-page {
     padding: 10em 30% 4em;
   }
@@ -70,14 +29,6 @@ li, a, button {
 
 .contact-wrapper {
   width: 100%;
-}
-
-#contact-page h1 {
-  margin: 0;
-}
-
-.heading {
-  margin-top: 2em;
 }
 
 .margin-bottom {
@@ -91,15 +42,17 @@ li, a, button {
 
 .form input[type="text"],
 .form textarea {
-  background-color: #0E1011;
-  padding: 0.8em;
+  background-color: #171b21;
+  color: #f5f5f5;
+  padding: 16px;
   border: none;
   border-radius: 5px;
   margin: 0 0 4px;
   outline: none;
-  font-size: 1.1em;
+  font-size: 1em;
   width: 100%;
   box-sizing: border-box;
+  border: 2px solid #31363c;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -112,9 +65,8 @@ li, a, button {
 }
 
 textarea, input {
-  font-family: 'Roboto Flex', sans-serif;
-  color: #CCCCCC;
-  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  color: #0E1011;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -131,22 +83,23 @@ textarea {
 ::-webkit-input-placeholder,
 ::-moz-placeholder,
 ::-ms-input-placeholder {
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: lighter;
   color: #161a1d;
 }
 
 .submit-form-button {
   text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 300;
+  font-size: 1em;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
   float: left;
   width: auto;
   border: none;
   border-radius: 5px;
-  color: #161A1D;
-  background-color: #CCCCCC;
-  padding: 0.8em 1.5em;
+  color: #fff;
+  background-color: #FF4747;
+  padding: 16px 32px;
   -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
   margin: 0;
@@ -157,11 +110,6 @@ textarea {
   .submit-form-button {
     width: 100%;
   }
-}
-
-.submit-form-button:hover {
-  background-color: #D62828;
-  color: #161A1D;
 }
 
 .showcase {
@@ -203,20 +151,20 @@ textarea {
 
 .submission-link {
   text-decoration: none;
-  color: #D62828;
+  color: #FF4747;
   border-bottom: 1px solid transparent;
   transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
 }
 
 .submission-link:hover {
-  border-bottom: 1px solid #D62828;
+  border-bottom: 1px solid #FF4747;
 }
 
 .error {
   z-index: 1;
-  border-top: 2px solid #D62828;
-  color: #D62828;
+  border-top: 2px solid #FF4747;
+  color: #FF4747;
   padding: 10px 0;
   width: 100%;
   max-width: 100%;
@@ -229,7 +177,7 @@ textarea {
 .inputAlert {
   padding: 10px 15px;
   width: 100%;
-  border-top: 2px solid #D62828;
-  color: #D62828;
+  border-top: 2px solid #FF4747;
+  color: #FF4747;
   text-align: center;
 }

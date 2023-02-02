@@ -9,14 +9,11 @@
     <link rel="icon" type="image/png" href="img/sp-favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/scary.css">
-    <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd6chpXuPwy8C6uJIGD62b2l3KJdLlbKQ&callback=initMap">
-    </script>
   </head>
   <body>
     <div id="header">
       <div class="container">
-        <a href="index.html"><img id="logo" src="img/scary-places-logo.png" alt="Scary Places"></a>
+        <a href="index.html" id="logo">Scary <span>Places</span></a>
         <div class="nav">
           <a href="index.html" class="nav-link hover-effect text">Home</a>
           <a href="blog.html" class="nav-link hover-effect text">Blog</a>
@@ -30,13 +27,20 @@
         </div>
       </div>
     </div>
-    <section id="search-location">
+    <div class="scary-page">
+      <h1>Coming Soon!</h1>
+      <p class="text">We are still in the process of developing the software for the scary place locator. Thank you for your patience. </p>
+    </div>
+    <!--<section id="search-location">
       <div class="container">
         <div id="map"></div>
         <div class="filter-results">
           <div>
             <label class="label">Location</label>
-            <input class="search" type="search" name="search" placeholder="Enter an address">
+            <div class="position-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input class="search" type="search" name="search" placeholder="Enter an address...">
+            </div>
           </div>
           <div>
             <label class="label">Radius: <span class="value">250</span> mi</label>
@@ -104,8 +108,9 @@
           <p class="text">© 2022 <a href="index.html">Scary Places.</a> All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </footer>-->
     <script src="scripts/navbar.js"></script>
-    <script type="module" src="scripts/map.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd6chpXuPwy8C6uJIGD62b2l3KJdLlbKQ&callback=initMap"></script>
   </body>
 </html>

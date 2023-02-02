@@ -14,7 +14,7 @@ function initMap() {
     });
   }
   
-  window.initMap = initMap;
+window.initMap = initMap;
 
 
 

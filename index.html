@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scary Places | Find scary places near you</title>
     <script src="https://kit.fontawesome.com/fbe66ddc41.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,8 +11,8 @@
   </head>
   <body>
     <div id="header">
-      <div class="container">
-        <a href="index.html"><img id="logo" src="img/scary-places-logo.png" alt="Scary Places"></a>
+      <div class="container animate">
+        <a href="index.html" id="logo">Scary <span>Places</span></a>
         <div class="nav">
           <a href="index.html" class="nav-link hover-effect text">Home</a>
           <a href="blog.html" class="nav-link hover-effect text">Blog</a>
@@ -28,11 +28,14 @@
     </div>
     <section id="home">
       <div class="container">
-        <h1>Scary Places Near You</h1>
+        <h1>Find scary places near you.</h1>
         <p class="text">Search for thousands of scary places across the world. Enter an address below to begin your search.</p>
-        <div class="flex-wrap">
-          <input class="search" type="search" name="search-location" placeholder="Location">
-          <a href="scary.html" class="search-button">Search</a>
+        <div class="flex">
+          <div class="position-relative">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search" type="search" name="search-location" placeholder="1031 Haunted Ave...">
+          </div>
+          <button>Search</button>
         </div>
       </div>
     </section>
@@ -59,37 +62,29 @@
     <section id="blog">
       <h2>Visit Our Blog</h2>
       <div class="container">
-        <div class="img-wrapper">
-          <img src="img/the-queen-mary.jpg" alt="The Queen Mary" class="blog-img">
-          <a href="blog/queen-mary.html">
-            <div class="overlay">
-              <div class="text">The Queen Mary</div>
-            </div>
-          </a>
+        <div class="txt-wrapper text-half">
+          <h3>The Queen Mary</h3>
+          <p class="text">...There have been numerous sightings by tourists who have seen various apparitions and events that generally could not have taken place in a ship that has been nonfunctional for over 40 years....</p>
+          <a href="blog/queen-mary.html">Read more...</a>
         </div>
-        <div class="img-wrapper">
-          <img src="img/the-catacombs.jpg" alt="Catacombs" class="blog-img">
-          <a href="blog/catacombs-of-paris.html">
-            <div class="overlay">
-              <div class="text">Catacombs of Paris</div>
-            </div>
-          </a>
+        <div class="img-wrapper img-half">
+          <img src="img/the-queen-mary.webp" alt="The Queen Mary" class="blog-img">
         </div>
-        <div class="img-wrapper">
-          <img src="img/chernobyl.jpg" alt="Chernobyl" class="blog-img">
-          <a href="blog/chernobyl.html">
-            <div class="overlay">
-              <div class="text">Chernobyl</div>
-            </div>
-          </a>
+        <div class="img-wrapper alt-img-half">
+          <img src="img/suicide-forest.webp" alt="Suicide Forest" class="blog-img">
         </div>
-        <div class="img-wrapper">
-          <img src="img/suicide-forest.jpg" alt="Suicide Forest" class="blog-img">
-          <a href="blog/suicide-forest.html">
-            <div class="overlay">
-              <div class="text">Suicide Forest</div>
-            </div>
-          </a>
+        <div class="txt-wrapper alt-text-half">
+          <h3>Suicide Forest</h3>
+          <p class="text align-right">...Aokigahara Forest has always haunted the poetic imagination. Long ago, it was said to be the home of yūrei, Japanese ghosts. Now it's the final resting place of as many as 100 suicide victims every year...</p>
+          <a href="blog/suicide-forest.html">Read more...</a>
+        </div>
+        <div class="txt-wrapper flex-start text-half last-text-row">
+          <h3>Catacombs of Paris</h3>
+          <p class="text">...The Catacombs of Paris are underground ossuaries in Paris, France, which hold the remains of more than six million people in a small part of a tunnel network built to consolidate Paris's ancient stone quarries...</p>
+          <a href="blog/catacombs-of-paris.html">Read more...</a>
+        </div>
+        <div class="img-wrapper img-half last-img-row">
+          <img src="img/the-catacombs.webp" alt="Catacombs" class="blog-img">
         </div>
       </div>
     </section>
@@ -100,22 +95,22 @@
         <button class='ctrl-btn next' data-toggle='next'>&#8250;</button>
         <ul class='carousel is-set'>
           <li class='carousel-seat'>
-            <img src="img/the-queen-mary.jpg" alt="The Queen Mary" class="carousel-img">
+            <img src="img/the-queen-mary.webp" alt="The Queen Mary" class="carousel-img">
           </li>
           <li class='carousel-seat'>
-            <img src="img/the-catacombs.jpg" alt="Catacombs" class="carousel-img">
+            <img src="img/the-catacombs.webp" alt="Catacombs" class="carousel-img">
           </li>
           <li class='carousel-seat'>
-            <img src="img/chernobyl.jpg" alt="Chernobyl" class="carousel-img">
+            <img src="img/chernobyl.webp" alt="Chernobyl" class="carousel-img">
           </li>
           <li class='carousel-seat'>
-            <img src="img/suicide-forest.jpg" alt="Suicide Forest" class="carousel-img">
+            <img src="img/suicide-forest.webp" alt="Suicide Forest" class="carousel-img">
           </li>
           <li class='carousel-seat'>
-            <img src="img/alcatraz.jpg" alt="Alcatraz" class="carousel-img">
+            <img src="img/alcatraz.webp" alt="Alcatraz" class="carousel-img">
           </li>
           <li class='carousel-seat is-ref'>
-            <img src="img/willard-asylum.jpg" alt="Willard Asylum" class="carousel-img">
+            <img src="img/willard-asylum.webp" alt="Willard Asylum" class="carousel-img">
           </li>
         </ul>
       </div>
@@ -155,5 +150,6 @@
     </footer>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/carousel.js"></script>
+    <script src="scripts/node.js"></script>
   </body>
 </html>
